@@ -1,0 +1,80 @@
+.greeting {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.name {
+    font-weight: 800;
+    font-size: 100px;
+    color: #afd5aa;
+}
+
+.role {
+    font-weight: 600;
+    color: white;
+    
+}
+
+.role-desc {
+    font-weight: 600;
+    color: dimgray;
+    
+}
+
+.role, .role-desc {
+    font-size: 35px;
+}
+
+.name, .role, .role-desc, .greeting {
+    
+    
+}
+
+.landing {
+    border: none;
+    transform: translateY(250px);
+    text-align: left;
+    padding-left: 50px;
+    overflow: hidden;
+    background: transparent;
+    box-shadow: none;
+
+    
+}
+
+.cursor {
+    display: inline-block;
+    background-color: white; /* Cursor color */
+    width: 10px; /* Adjust for cursor thickness */
+    height: 23px; /* Adjust to match the height of your text */
+    vertical-align: middle;
+    margin-left: 3px; /* Optional, for spacing between the text and cursor */
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust for the initial position */
+}
+
+.fade-slide-in {
+    animation: fadeSlideIn 1s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Initial position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}

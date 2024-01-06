@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(./fonts/Helvetica-Bold-Font.ttf);
+}
+  
+.helvetica {
+    font-family: Helvetica;
+}
+
+.pixel {
+    font-family: 'M PLUS 1 Code', monospace;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.fadeIn {
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
