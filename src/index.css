@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 * {
-    background-color: #070707;
+    background-color: black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}

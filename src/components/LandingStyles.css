@@ -2,6 +2,8 @@
     font-weight: 400;
     font-size: 20px;
     color: white;
+    transform: translateY(251px);
+    padding-left: 20%;
 }
 
 .name {
@@ -26,21 +28,15 @@
     font-size: 35px;
 }
 
-.name, .role, .role-desc, .greeting {
-    
-    
-}
-
 .landing {
-    border: none;
-    transform: translateY(250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100vh; 
+    padding-left: 20%; 
     text-align: left;
-    padding-left: 50px;
-    overflow: hidden;
-    background: transparent;
-    box-shadow: none;
-
-    
+    margin-top: -100px;
 }
 
 .cursor {
@@ -50,7 +46,7 @@
     height: 23px; /* Adjust to match the height of your text */
     vertical-align: middle;
     margin-left: 3px; /* Optional, for spacing between the text and cursor */
-    animation: blink 1s step-end infinite;
+    animation: blink 1s step-end;
 }
 
 @keyframes blink {
@@ -59,22 +55,19 @@
     }
 }
 
-.hidden {
-    opacity: 0;
-    transform: translateY(20px); /* Adjust for the initial position */
-}
-
-.fade-slide-in {
-    animation: fadeSlideIn 1s ease forwards;
-}
-
-@keyframes fadeSlideIn {
-    from {
+@keyframes fade-up {
+    0% {
         opacity: 0;
-        transform: translateY(20px); /* Initial position */
+        transform: translateY(30px);
     }
-    to {
+    100% {
         opacity: 1;
-        transform: translateY(0); /* Final position */
+        transform: translateY(0px);
     }
+}
+
+.name, .role {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-up .5s forwards;
 }
