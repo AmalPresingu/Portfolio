@@ -1,3 +1,8 @@
+h1 {
+    margin: 0%;
+    padding-bottom: 25px;
+}
+
 .greeting {
     font-weight: 400;
     font-size: 20px;
@@ -7,25 +12,15 @@
 }
 
 .name {
-    font-weight: 800;
-    font-size: 100px;
+    font-weight: 700;
+    font-size: 110px;
     color: #afd5aa;
 }
 
 .role {
     font-weight: 600;
     color: white;
-    
-}
-
-.role-desc {
-    font-weight: 600;
-    color: dimgray;
-    
-}
-
-.role, .role-desc {
-    font-size: 35px;
+    font-size: 50px;
 }
 
 .landing {
@@ -36,10 +31,13 @@
     height: 100vh; 
     padding-left: 20%; 
     text-align: left;
+    margin: 0;
     margin-top: -100px;
+    background: transparent;
 }
 
 .cursor {
+    position: absolute;
     display: inline-block;
     background-color: white; /* Cursor color */
     width: 10px; /* Adjust for cursor thickness */
@@ -64,6 +62,12 @@
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+button {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-up .5s forwards;
 }
 
 .name, .role {

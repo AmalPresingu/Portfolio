@@ -1,18 +1,29 @@
 import './LandingStyles.css'
 import '../App.css'
 import TypingReveal from './TypingReveal';
+import '../index.css'
 import { useEffect, useState } from 'react';
 
 
 const LandingPage = () => {
     const [showDiv, setShowDiv] = useState(false);
+    const [showResume, setShowResume] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
+        const landingTimer = setTimeout(() => {
             setShowDiv(true);
-        }, 3850);
-        return () => clearTimeout(timer);
-    }, [])
+        }, 3800);
+
+        const resumeTimer = setTimeout(() => {
+            setShowResume(true);
+        }, 4000); 
+
+        return () => {
+            clearTimeout(landingTimer);
+            clearTimeout(resumeTimer);
+        };
+    }, []);
+
     return (
         <>
             <h1 className="greeting pixel">
@@ -21,14 +32,18 @@ const LandingPage = () => {
             <div className="landing">
                 {showDiv && (
                 <>
-                <h1 className="name helvetica">Amal Presingu.</h1>
-                <h2 className="role helvetica">Software Engineer <span className='role-desc'>specializing in Web Development.</span></h2>
+                    <h1 className="name inter">Amal Presingu</h1>
+                    <h1 className="role inter">Software Engineer</h1>
                 </>
-            )}
+                )}
             </div>
+            {showResume && (
+                <div className='resume'>
+                    <button className='inter'>Resume</button>
+                </div>
+            )}
         </>
-      );
-    }
+    );
+}
 
 export default LandingPage;
-  
