@@ -1,14 +1,26 @@
-/*@tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities;*/
+@tailwind utilities;
 
 * {
     background-color: black;
 }
 
+
 html {
+    scrollbar-width: thin;
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: rgb(15, 15, 15);
+    border-radius: 8px;
+}
+
 
 .resume {
     display: flex;
@@ -18,7 +30,7 @@ html {
     padding-left: 20%; 
     text-align: left;
     position: relative;
-    top: -325px;
+    top: -295px;
 }
 
 button {
@@ -28,7 +40,7 @@ button {
     line-height: 50px;
     text-align: center;
     letter-spacing: 1px;
-    color: #fff;
+    color: white;
     background-color: black;
     border: 2px solid rgb(233, 233, 233);
     border-radius: 4px;
@@ -40,11 +52,12 @@ button {
     align-items: center; /* Center vertically */
     height: 50px; /* Specify a height */
     width: 120px; /* Specify a width */
+    
 }
 
   
 button:hover {
-    background-color: 	#1DB954;
+    background-color: #1DB954;
     //box-shadow: 0px 6px 8px rgba(175, 213, 170, 0.4); /* Adjusted shadow color to match */
     color: black;
 }

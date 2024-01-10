@@ -42,6 +42,7 @@ const LandingPage = () => {
                     <button className='inter'>Resume</button>
                 </div>
             )}
+            
         </>
     );
 }
