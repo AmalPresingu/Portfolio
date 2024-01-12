@@ -9,7 +9,7 @@ const Navbar = () => {
     useEffect(() => {
         const navTimer = setTimeout(() => {
             setShowNav(true);
-        }, 3700)
+        }, 3500)
 
         return () => {
             clearTimeout(navTimer);

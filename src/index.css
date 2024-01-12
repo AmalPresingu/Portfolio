@@ -29,6 +29,8 @@ html {
     text-align: left;
     position: relative;
     top: -290px;
+    width: 10%;
+    //transform: translateY(-290px);
 }
 
 button {

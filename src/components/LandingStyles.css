@@ -7,7 +7,7 @@ h1 {
     font-weight: 400;
     font-size: 20px;
     color: white;
-    transform: translateY(210px);
+    transform: translateY(310px);
     padding-left: 20%;
 }
 
@@ -34,19 +34,27 @@ h1 {
     padding-left: 20%; 
     text-align: left;
     margin: 0;
-    margin-top: -100px;
+    width: 60%;
+    //margin-top: -100px;
     background: transparent;
 }
 
 .landing-image {
-    float: right;
+    //z-index: 50;
+    position: relative;
+    transform: translateX(875px);
     max-width: 200px;
     height: auto;
+    width: 100%;
 }
 
 .landing-image img {
-    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120%;
     height: auto;
+    margin-top: -200px;
 }
 
 .cursor {
@@ -84,7 +92,7 @@ button {
     animation: fade-up .5s forwards;
 }
 
-.name, .role {
+.name, .role, img {
     opacity: 0;
     transform: translateY(30px);
     animation: fade-up .5s forwards;
