@@ -32,7 +32,11 @@ const LandingPage = () => {
             <div className="landing">
                 {showDiv && (
                 <>
+                
                     <h1 className="name inter">Amal Presingu</h1>
+                    <div className='landing-image'>
+                        <img src="pic.png" alt=""></img>
+                    </div>
                     <h1 className="role inter">Software Engineer</h1>
                 </>
                 )}

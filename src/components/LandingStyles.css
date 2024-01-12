@@ -7,7 +7,7 @@ h1 {
     font-weight: 400;
     font-size: 20px;
     color: white;
-    transform: translateY(220px);
+    transform: translateY(210px);
     padding-left: 20%;
 }
 
@@ -21,19 +21,32 @@ h1 {
     font-weight: 600;
     color: white;
     font-size: 50px;
+    margin-top: 10px;
 }
 
 .landing {
+    //float: left;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: flex-start; 
-    height: 93vh; 
+    height: 90vh; 
     padding-left: 20%; 
     text-align: left;
     margin: 0;
     margin-top: -100px;
     background: transparent;
+}
+
+.landing-image {
+    float: right;
+    max-width: 200px;
+    height: auto;
+}
+
+.landing-image img {
+    width: 100%;
+    height: auto;
 }
 
 .cursor {
