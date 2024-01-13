@@ -7,11 +7,12 @@
 }
 
 .about-container h1 {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     
 }
 
 .p-container {
+     
     display: inline-block;
     max-width: 600px;
     margin: 0 auto;
@@ -22,7 +23,33 @@
 }
 
 .p-container p {
-    color: rgb(255, 255, 255);
+    color: rgb(204, 204, 204);
     font-weight: 300;
     text-align: left;
+}
+
+.tech-list {
+    
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+}
+
+.tech-list li {
+    color: rgb(204, 204, 204);
+    padding-left: 1.5em;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: left;
+    font-weight: 300;
+}
+
+.tech-list li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: #afd5aa;
+    
 }

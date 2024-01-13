@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     background: #000000;
-    animation: fade-up 0.5s ease forwards;
+    animation: fade-down 0.5s ease forwards;
     position: fixed;
     top: 0;
     left: 0;
