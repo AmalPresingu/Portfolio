@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 8vh;
+    margin-top: 5vh;
+    animation: fade-up .5s forwards;
 }
 
 .about-container h1 {
@@ -12,7 +13,6 @@
 }
 
 .p-container {
-     
     display: inline-block;
     max-width: 600px;
     margin: 0 auto;
@@ -24,7 +24,8 @@
 
 .p-container p {
     color: rgb(204, 204, 204);
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -43,7 +44,8 @@
     margin-bottom: 10px;
     position: relative;
     text-align: left;
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .tech-list li::before {
@@ -52,4 +54,15 @@
     left: 0;
     color: #afd5aa;
     
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

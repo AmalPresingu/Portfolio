@@ -2,6 +2,16 @@
     font-family: Helvetica;
     src: url(./fonts/Helvetica-Bold-Font.ttf);
 }
+
+@font-face {
+    font-family: Geist;
+    src: url(./fonts/GeistVariableVF.ttf)
+}
+
+@font-face {
+    font-family: Geist-Mono;
+    src: url(./fonts/GeistMonoVariableVF.ttf);
+}
   
 .helvetica {
     font-family: Helvetica;
@@ -17,4 +27,12 @@
 
 .inter {
     font-family: 'Inter', sans-serif;
+}
+
+.geist {
+    font-family: Geist;
+}
+
+.geist-mono {
+    font-family: Geist-Mono;
 }

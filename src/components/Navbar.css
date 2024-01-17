@@ -1,5 +1,5 @@
 .Navbar {
-    height: 95px;
+    height: 9vh;
     width: 98%;
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,12 @@
     position: fixed;
     top: 0;
     left: 0;
+    transition: top 0.3s;
+    z-index: 10;
+}
+
+.Navbar-hide {
+  top: -100%;
 }
   
   .Navbar > .nav-logo {
