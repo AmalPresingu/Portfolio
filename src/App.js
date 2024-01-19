@@ -7,13 +7,13 @@ import Card from './components/Card';
 
 function App() {
   const projectsData = [{
-    projectName: 'Project Name',
+    projectName: 'BiznessmenNFT',
     projectUrl: "https://testingwebsite-kh0rb4fju-kingamal.vercel.app/",
     githubUrl: "https://github.com/AmalPresingu/BiznessmenNFT",
+    imageUrl: "biznessmen.png",
     tags: ['C#', 'HTML5', 'CSS', 'Unity'],
     description: "Description"
   }
-  //other projects here
 ]
 
   return (

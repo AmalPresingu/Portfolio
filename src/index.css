@@ -1,7 +1,7 @@
 
-* {
+body {
     //background-color: #12130f;
-    background-color: black;
+    background-color: #12130f;
 }
 
 
@@ -42,7 +42,7 @@ button {
     text-align: center;
     letter-spacing: 1px;
     color: white;
-    background-color: black;
+    background-color: #12130f;
     border: 2px solid rgb(233, 233, 233);
     border-radius: 4px;
     transition: all 0.3s ease;

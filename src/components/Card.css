@@ -1,57 +1,116 @@
 .project-card {
-    width: 100%;
-    max-width: 320px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
+  background: #0b0c09; /* uncommented and set to a color */
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px auto; /* adjusted for centering */
+  box-shadow: 0px 4px 8px rgba(31, 31, 31, 0.1);
+  width: calc(100% - 40px); /* adjust width to account for margin */
+  max-width: 50vh; /* you may want to change this to px or % */
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between; /* This will position title and icons at start and end of the container */
+  align-items: center;
+  background-color: #0b0c09; /* adjusted to match the rest of the card */
+  padding: 0.75rem; /* consistent padding around the title and icons */
+}
+
+.project-card-image {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px;
+}
+
+.project-card-content {
+  background-color: #0b0c09; /* ensures the entire content area has the same background color */
+}
+
+.project-card-title {
+  color: rgb(204, 204, 204);
+  font-size: 1.5em;
+  margin-bottom: 0; /* removed bottom margin */
+  padding-top: 0.75rem;
+  background-color: #0b0c09;
+  margin-top: 0;
+  width: 50%;
+}
+
+.project-card-description {
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+  color: rgb(204, 204, 204);
+  line-height: 1.4;
+  background-color: #0b0c09;
+}
+
+.project-card-tags {
+  background-color: #0b0c09; /* ensures tags have the same background color */
+  padding: 0.75rem 0; /* add padding for spacing */
+}
+
+.project-tag {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  font-size: 0.85em;
+}
+
+.project-card-icons {
+  display: flex;
+  justify-content: flex-end; /* align icons to the right */
+  gap: 12px;
+  background-color: #0b0c09;
   
-  .project-card-header {
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F5F5F5;
-    border-bottom: 1px solid #E1E1E1;
+}
+
+.project-card-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-card-divider {
+  border: none;
+  height: 1px;
+  background-color: #313131; /* color of the divider line */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-card {
+    margin: 20px auto;
+    max-width: 95%;
   }
-  
-  .project-card-header h3 {
-    font-size: 1.25em;
-    color: #333;
-  }
-  
-  .project-card-icons a {
-    color: #333;
-    padding: 0 8px;
-  }
-  
-  .project-card-image {
-    width: 100%;
-    height: auto;
-  }
-  
-  .project-card-body {
-    padding: 16px;
-  }
-  
-  .project-card-tags {
-    margin-bottom: 12px;
-  }
-  
+
+  .project-card-body,
+  .project-card-title,
+  .project-card-description,
   .project-tag {
-    display: inline-block;
-    background-color: #E0E0E0;
-    border-radius: 16px;
-    padding: 5px 15px;
-    margin-right: 10px;
-    font-size: 0.75em;
+    padding: calc(16px + 1vw);
+    font-size: calc(0.5em + 1vw);
   }
-  
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    max-width: 100%;
+  }
+
+  .project-card-title,
   .project-card-description {
-    font-size: 0.9em;
-    color: #666;
-    line-height: 1.6;
+    font-size: calc(0.75em + 1vw);
   }
-  
+}
+
+.wrapper-top {
+  padding-top: 30vh;
+}
+
+.wrapper-bottom {
+  padding-bottom: 50vh;
+}

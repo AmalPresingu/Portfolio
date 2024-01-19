@@ -6,6 +6,7 @@ const Navbar = () => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [reveal, setReveal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const revealTimer = setTimeout(() => {
@@ -40,17 +41,15 @@ const Navbar = () => {
     {reveal && (
       <div className={`Navbar inter ${!show && 'Navbar-hide'}`}>
         <img src="logov2.png" alt="" className="nav-logo" />
-        <div className="nav-items">
+        <div className={`nav-items ${isOpen && "open"}`}>
           <a href="/home">Home</a>
           <a href="/about">About</a>
           <a href="/projects">Projects</a>
           <a href="/contact">Contact</a>
         </div>
         <div
-          className="nav-toggle"
-          onClick={() => {/* handle toggle */}}
-        >
-          {/* toggle button content */}
+          className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
+            <div className="bar"></div>
         </div>
       </div>
       )}
