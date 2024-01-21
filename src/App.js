@@ -11,8 +11,8 @@ function App() {
     projectUrl: "https://testingwebsite-kh0rb4fju-kingamal.vercel.app/",
     githubUrl: "https://github.com/AmalPresingu/BiznessmenNFT",
     imageUrl: "biznessmen.png",
-    tags: ['C#', 'HTML5', 'CSS', 'Unity'],
-    description: "Description"
+    tags: ['HTML5', 'CSS', 'Unity', 'C#'],
+    description: "A Unity multi-level game designed and developed for the Solana Network. Access for this play-to-earn game was previously linked to NFTs."
   }
 ]
 

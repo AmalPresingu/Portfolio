@@ -1,6 +1,6 @@
 .Navbar {
     height: 9vh;
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +11,8 @@
     left: 0;
     transition: top 0.3s;
     z-index: 10;
-    
+    //border-bottom: 1px solid rgb(75, 75, 75);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .Navbar-hide {
@@ -31,6 +32,8 @@
     margin: 33px;
     position: relative;
     opacity: 0.9;
+    transition: all 0.3s ease;
+    
   }
   
   .Navbar > .nav-items > a:hover {

@@ -53,7 +53,7 @@ button {
     align-items: center; /* Center vertically */
     height: 50px; /* Specify a height */
     width: 120px; /* Specify a width */
-    
+    //transition: color 0.3s ease;
 }
 
   

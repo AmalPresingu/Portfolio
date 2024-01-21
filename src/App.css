@@ -36,3 +36,8 @@
 .geist-mono {
     font-family: Geist-Mono;
 }
+
+.ubuntu { 
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+}
