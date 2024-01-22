@@ -41,3 +41,59 @@
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 1px;
 }
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns with equal width */
+    grid-template-rows: auto; /* Rows size will be determined by content size */
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 200px;
+  }
+  
+  .label {
+    grid-column: 1 / 2; /* Occupies the first column */
+    grid-row: 1 / 2; /* Occupies the first row */
+    text-align: center;
+    align-self: center;
+  }
+  
+  /* Apply grid positions for the cards */
+  .cards-container .card {
+    /* Allow cards to fill the space */
+  }
+  
+  /* Use the nth-child selector to position cards for desktop view */
+  .cards-container .card:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .cards-container .card:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .cards-container .card:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: 1fr; /* Switch to one column for smaller screens */
+    }
+  
+    .label {
+      grid-column: 1; /* Label takes full width */
+      text-align: center; /* Center the text on small screens */
+    }
+  
+    .cards-container .card {
+      grid-column: 1; /* All cards take full width */
+    }
+  }
+  

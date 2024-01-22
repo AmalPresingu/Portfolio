@@ -47,7 +47,6 @@ const Card = ({ projectName, projectUrl, githubUrl, imageUrl, tags, description 
 
   return (
     <>
-      <div className='wrapper-top'></div>
         <div className="project-card">
         <a href={projectUrl} target='_blank' rel="noopener noreferrer" className='project-card-link'>
           <img src={imageUrl} alt={projectName} className="project-card-image" />
@@ -75,8 +74,7 @@ const Card = ({ projectName, projectUrl, githubUrl, imageUrl, tags, description 
           </div>
           </a>
         </div>
-        
-        <div className='wrapper-bottom'></div>
+
       </>
     );
   };
