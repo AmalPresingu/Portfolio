@@ -5,6 +5,8 @@ import LandingPage from './components/LandingPage';
 import AboutMe from './components/AboutMe';
 import Navbar from './components/Navbar';
 import Card from './components/Card';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [showCards, setShowCards] = useState(false)
@@ -49,13 +51,17 @@ function App() {
       <LandingPage />
       <AboutMe />
       {showCards && (
-      <div className='cards-container'>
-        <h1 className='label inter'>Featured Work</h1>
-        {projectsData.map((project, index) => (
-          <Card key={index} {...project} className="card" />
-        ))}
-      </div>
-      )}
+        <>
+          <div className='cards-container'>
+            <h1 className='label inter'>Featured Work</h1>
+            {projectsData.map((project, index) => (
+              <Card key={index} {...project} className="card" />
+            ))}
+          </div>
+          <Contact />
+          <Footer />
+          </>
+      )} 
     </div>
   )
 }
