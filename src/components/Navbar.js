@@ -8,6 +8,12 @@ const Navbar = () => {
   const [reveal, setReveal] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToSection = (sectionId) => (e) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
+
   useEffect(() => {
     const revealTimer = setTimeout(() => {
       setReveal(true);
@@ -42,10 +48,10 @@ const Navbar = () => {
       <div className={`Navbar inter ${!show && 'Navbar-hide'}`}>
         <img src="logov2.png" alt="" className="nav-logo" />
         <div className={`nav-items ${isOpen && "open"}`}>
-          <a href="/home">Home</a>
-          <a href="/about">About</a>
-          <a href="/projects">Projects</a>
-          <a href="/contact">Contact</a>
+          <a href="#home" onClick={scrollToSection('home')}>Home</a>
+          <a href="#about" onClick={scrollToSection('about')}>About</a>
+          <a href="#projects" onClick={scrollToSection('projects')}>Projects</a>
+          <a href="#contact" onClick={scrollToSection('contact')}>Contact</a>
         </div>
         <div
           className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>

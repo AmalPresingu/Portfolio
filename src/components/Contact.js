@@ -10,7 +10,7 @@ const Contact = () => {
     const githubUrl = 'https://github.com/AmalPresingu';
 
     return (
-        <div className='contact-section'>
+        <div className='contact-section' id='contact'>
             <h1 className='contact-heading inter'>Reach Out</h1>
             <div className='briefing-container'>
                 <p className='briefing inter'>I'm currently looking for opportunities, preferably in web and frontend development. Feel free to reach out and I'll get back to you.</p>

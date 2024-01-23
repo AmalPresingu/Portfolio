@@ -47,7 +47,7 @@ const Card = ({ projectName, projectUrl, githubUrl, imageUrl, tags, description 
 
   return (
     <>
-        <div className="project-card">
+        <div className="project-card" id='projects'>
         <a href={projectUrl} target='_blank' rel="noopener noreferrer" className='project-card-link'>
           <img src={imageUrl} alt={projectName} className="project-card-image" />
           <div className="project-card-content">

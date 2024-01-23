@@ -20,7 +20,7 @@ const AboutMe = () => {
     return (
         <>
             {showAbout && (
-                <div className='about-container'>
+                <div className='about-container' id='about'>
                 <h1 className='label inter'>About Me</h1>
                 <div className='p-container'>
                     <p className='geist'>

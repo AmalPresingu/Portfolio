@@ -26,7 +26,7 @@ const LandingPage = () => {
 
     return (
         <>
-            <h1 className="greeting pixel">
+            <h1 className="greeting pixel" id='home'>
                 <TypingReveal text="> Hello world, my name is" speed={100}/>
             </h1>
             <div className="landing">
