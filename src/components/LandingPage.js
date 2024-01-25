@@ -45,7 +45,9 @@ const LandingPage = () => {
                 </div>
                 {showResume && (
                     <div className='resume'>
-                        <button className='inter'>Resume</button>
+                        <a href='Amal_Presingu_Resume.pdf' target='_blank' rel='noopener noreferrer' className='resume-link'>
+                            <button className='inter'>Resume</button>
+                        </a>
                     </div>
                 )}
             </div>
