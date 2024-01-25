@@ -10,7 +10,7 @@ const AboutMe = () => {
     useEffect(() => {
         const aboutTimer = setTimeout(() => {
             setShowAbout(true);
-        }, 3500)
+        }, 4000)
 
         return () => {
             clearTimeout(aboutTimer);

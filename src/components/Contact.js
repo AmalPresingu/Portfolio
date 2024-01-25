@@ -16,13 +16,13 @@ const Contact = () => {
                 <p className='briefing inter'>I'm currently looking for opportunities, preferably in web and frontend development. Feel free to reach out and I'll get back to you.</p>
             </div>
             <div className='icons-container'>
-                <a href = {emailAddress}>
+                <a href = {emailAddress} target='_blank' rel='noreferrer'>
                     <FaEnvelope size = '40px' />
                 </a>
-                <a href = {githubUrl}>
+                <a href = {githubUrl} target='_blank' rel='noreferrer'>
                     <FaGithubSquare size = '40px'/>
                 </a>
-                <a href = {linkedinUrl}>
+                <a href = {linkedinUrl} target='_blank' rel='noreferrer'>
                     <FaLinkedin size = '40px'/>
                 </a>
             </div>

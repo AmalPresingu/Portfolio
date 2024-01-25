@@ -3,26 +3,63 @@
     //padding-bottom: 25px;
 }
 
+.landing-container {
+    padding-top: 305px;
+    padding-bottom: 410px;
+}
+
 .greeting {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.2rem;
+    //font-size: calc(1rem + 1vw);
     color: white;
-    transform: translateY(310px);
     padding-left: 20%;
 }
 
 .name {
     font-weight: 700;
-    font-size: 110px;
+    //font-size: 7rem;
+    font-size: calc(5rem + 1vw);
     color: #afd5aa;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .role {
     font-weight: 600;
     color: rgb(255, 255, 255);
-    font-size: 50px;
-    margin-top: 10px;
+    font-size: 3.3rem;
+    //margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    .name {
+      font-size: calc(3rem + 2vw);
+    }
+  
+    .role {
+      font-size: calc(1.5rem + 1vw);
+    }
+  }
+  
+  /* For very small screens, ensure text doesn't become too small */
+  @media (max-width: 480px) {
+    .name {
+      font-size: calc(2.4rem + 1vw);
+      padding-bottom: 5px;
+    }
+    .role {
+        font-size: calc(1.3rem + 1vw);
+    }      
+    .landing-image img {
+        right: 849px;
+        top: 220px;
+    }
+    .resume {
+        transform: translateY(250px);
+    }
+  }
 
 .landing {
     //float: left;
@@ -30,7 +67,7 @@
     flex-direction: column;
     justify-content: center; 
     align-items: flex-start; 
-    height: 90vh; 
+    //height: 90vh; 
     padding-left: 20%; 
     text-align: left;
     margin: 0;
@@ -44,14 +81,12 @@
     position: relative;
     transform: translateX(875px);
     max-width: 200px;
-    height: auto;
+    //height: auto;
     width: 100%;
 }
 
 .landing-image img {
     position: absolute;
-    top: 0;
-    right: 0;
     width: 120%;
     height: auto;
     margin-top: -200px;
@@ -67,6 +102,15 @@
     vertical-align: middle;
     margin-left: 3px; /* Optional, for spacing between the text and cursor */
     animation: blink 1s step-end;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 20px;
+    padding-left: 20%;
 }
 
 @keyframes blink {

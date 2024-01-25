@@ -20,23 +20,10 @@ html {
     border-radius: 8px;
 }
 
-
-.resume {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 10.5vh; 
-    padding-left: 20%; 
-    text-align: left;
-    //position: relative;
-    top: -30.49421661409043vh;
-    width: 10%;
-    transform: translateY(-290px);
-}
-
 button {
     padding: 10px 20px;
     font-size: 16px;
+    //font-size: 1.25vw;
     font-weight: 500;
     line-height: 50px;
     text-align: center;
@@ -51,9 +38,10 @@ button {
     display: flex; /* Add this line */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    max-width: 120px;
     height: 50px; /* Specify a height */
     width: 120px; /* Specify a width */
-    //transition: color 0.3s ease;
+    
 }
 
   

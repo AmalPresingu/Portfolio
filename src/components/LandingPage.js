@@ -26,28 +26,29 @@ const LandingPage = () => {
 
     return (
         <>
-            <h1 className="greeting pixel" id='home'>
-                <TypingReveal text="> Hello world, my name is" speed={100}/>
-            </h1>
-            <div className="landing">
-                {showDiv && (
-                    <>
-                    <div className='headers'>
-                        <h1 className="name inter">Amal Presingu</h1>
-                        <h1 className="role inter">Software Engineer</h1>
+            <div className='landing-container'>
+                <h1 className="greeting pixel" id='home'>
+                    <TypingReveal text="> Hello world, my name is" speed={100}/>
+                </h1>
+                <div className="landing">
+                    {showDiv && (
+                        <>
+                        <div className='headers'>
+                            <h1 className="name inter">Amal Presingu</h1>
+                            <h1 className="role inter">Software Engineer</h1>
+                        </div>
+                        <div className='landing-image'>
+                            <img src="pic2.png" alt=""></img>
+                        </div>
+                    </>
+                    )}
+                </div>
+                {showResume && (
+                    <div className='resume'>
+                        <button className='inter'>Resume</button>
                     </div>
-                    <div className='landing-image'>
-                        <img src="pic2.png" alt=""></img>
-                    </div>
-                </>
                 )}
             </div>
-            {showResume && (
-                <div className='resume'>
-                    <button className='inter'>Resume</button>
-                </div>
-            )}
-            
         </>
     );
 }
